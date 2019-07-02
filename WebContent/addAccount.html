@@ -128,8 +128,8 @@ form.example::after {
 <div class="vertical-menu">
   <a class ="active" href="#">Add Account</a>
   <a href="deleteAccount.html">Delete Account</a>
-  <a href="#">Update Account</a>
-  <a href="#">View Account</a>
+  <a href="updateAccount.html">Update Account</a>
+  <a href="viewAccount.html">View Account</a>
 </div>
 </body>
 <body>
@@ -153,7 +153,7 @@ form.example::after {
 	</div>
 	<div id="address" style="padding:5px;">
     <label for="address"><b>Address</b></label>
-    <input type="text" placeholder="Enter Address" name="mobile no" required>
+    <input type="text" placeholder="Enter Address" name="address" required>
 	</div>
 	<div id="mobile no" style="padding:5px;">
     <label for="mobile no"><b>Mobile No.</b></label>
@@ -174,21 +174,22 @@ form.example::after {
 	</div>
 	<hr>
 	<h2> ACCOUNT DETAILS </h2>
-	<div id="account_no" style="padding:5px;">
-    <label for="account_no"><b>Account No.</b></label>
-    <input type="text" placeholder="Enter Account No." name="account_no" required>
+
+	<div id="cust_id" style="padding:5px;">
+    <label for="cust_id"><b>Customer ID</b></label>
+    <input type="text" placeholder="Enter Customer Id" name="custid" required>
     </div>
 	<div id="branch_id" style="padding:5px;">
     <label for="branch_id"><b>Branch ID</b></label>
-    <input type="text" placeholder="Enter Branch ID" name="branch_id" required>
+    <input type="text" placeholder="Enter Branch ID" name="bid" required>
     </div>
 	<div id="registeration_date" style="padding:5px;">
     <label for="registeration_date"><b>Registeration Date</b></label>
-    <input type="text" placeholder="Enter Registeration Date" name="registeration_date" required>
+    <input type="text" placeholder="Enter Registeration Date" name="register_date" required>
     </div>
 	<div id="activation_date" style="padding:5px;">
     <label for="Activation_date"><b>Activation Date</b></label>
-    <input type="text" placeholder="Enter Activation Date" name="registeration_date" required>
+    <input type="text" placeholder="Enter Activation Date" name="activation_date" required>
     </div>
 	<div id="account_type" style="padding:5px;">
     <label for="account_type"><b>Account Type</b></label>
@@ -200,7 +201,7 @@ form.example::after {
     </div>
 	<div id="opening_balance" style="padding:5px;">
     <label for="opening_balance"><b>Opening Balance</b></label>
-    <input type="text" placeholder="Enter Opening balance" name="account_type" required>
+    <input type="text" placeholder="Enter Opening balance" name="opening_balance" required>
     </div>
 	
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>

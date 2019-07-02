@@ -93,6 +93,10 @@ public class Customer_Master_Pojo {
 	  {
 		this.password = password;
 	  }	
-	
+	public String toString()
+	{
+		return "Customer Id:"+custid+"\nName:"+fname+" "+lname+"\nGender:"+gender+"\nAddress:"+address
+				+"\nContact No:"+mobileno+"\nE-Mail:"+emailid;
+	}
 
 }

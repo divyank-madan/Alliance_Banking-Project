@@ -1,6 +1,9 @@
-<!DOCTYPE html>
+<%@ page import="account_info.Account_Service , customer_master.Customer_Master_Pojo" language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE>
 <html>
 <head>
+<meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -105,13 +108,12 @@ form.example::after {
 .topnav-right {
   float: right;
 }
-
-
 </style>
+
 </head>
 <body background="1.jpg" style="background-repeat:no-repeat;background-size:cover">
 <div class="topnav">
-  <a  href="dashboard.html">Dashboard</a>
+  <a href="dashboard.html">Dashboard</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
@@ -127,32 +129,27 @@ form.example::after {
 <body>
 <div class="vertical-menu">
   <a href="addAccount.html">Add Account</a>
-  <a class="active" href="#">Delete Account</a>
+  <a href="deleteAccount.html">Delete Account</a>
   <a href="updateAccount.html">Update Account</a>
-  <a href="viewAccount.html">View Account</a>
+  <a class="active" href="#">View Account</a>
 </div>
 
 <center>
 <div id="container" style="height:150px;width:400px;background-color:lightgrey;margin-top:-150px ">
 
-<form action="AccountServlet" style="padding:5px">
-	<h3>Enter the account id to be deleted:</h3>
-	<div id="accountid" style="padding:5px;">
-    <label for="accountid"><b>Account Id:</b></label>
-    <input type="text" placeholder="Enter Account Id" name="accountid" required>
-	
-	<div style="padding:10px">
-    <button type="submit" id="deletebtn">Delete</button>
-	<button type="button" id="cancelbtn">Cancel</button>
-	</div>
-	
-	</div>
-	
-</form>
+<fieldset>
+<%
+String accountid=request.getParameter("viewid");
+Account_Service as2 = new Account_Service();
+Customer_Master_Pojo ob = as2.viewAccount(accountid);
+String details=ob.toString();
+out.print(details);
+%>
+</fieldset>
 
 </div>
 </center>
 </body>
 
-
 </html>
+</DOCTYPE>

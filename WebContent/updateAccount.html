@@ -127,22 +127,22 @@ form.example::after {
 <body>
 <div class="vertical-menu">
   <a href="addAccount.html">Add Account</a>
-  <a class="active" href="#">Delete Account</a>
-  <a href="updateAccount.html">Update Account</a>
+  <a href="deleteAccount.html">Delete Account</a>
+  <a class="active" href="updateAccount.html">Update Account</a>
   <a href="viewAccount.html">View Account</a>
 </div>
 
 <center>
 <div id="container" style="height:150px;width:400px;background-color:lightgrey;margin-top:-150px ">
 
-<form action="AccountServlet" style="padding:5px">
-	<h3>Enter the account id to be deleted:</h3>
+<form action="updateAccountDetails.jsp" style="padding:5px">
+	<h3>Enter the account id to be updated:</h3>
 	<div id="accountid" style="padding:5px;">
     <label for="accountid"><b>Account Id:</b></label>
     <input type="text" placeholder="Enter Account Id" name="accountid" required>
 	
 	<div style="padding:10px">
-    <button type="submit" id="deletebtn">Delete</button>
+    <button type="submit" id="deletebtn">Ok</button>
 	<button type="button" id="cancelbtn">Cancel</button>
 	</div>
 	

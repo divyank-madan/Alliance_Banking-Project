@@ -111,7 +111,7 @@ form.example::after {
 </head>
 <body background="1.jpg" style="background-repeat:no-repeat;background-size:cover">
 <div class="topnav">
-  <a  href="dashboard.html">Dashboard</a>
+  <a href="dashboard.html">Dashboard</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
@@ -127,22 +127,22 @@ form.example::after {
 <body>
 <div class="vertical-menu">
   <a href="addAccount.html">Add Account</a>
-  <a class="active" href="#">Delete Account</a>
+  <a href="deleteAccount.html">Delete Account</a>
   <a href="updateAccount.html">Update Account</a>
-  <a href="viewAccount.html">View Account</a>
+  <a class="active" href="#">View Account</a>
 </div>
 
 <center>
 <div id="container" style="height:150px;width:400px;background-color:lightgrey;margin-top:-150px ">
 
-<form action="AccountServlet" style="padding:5px">
-	<h3>Enter the account id to be deleted:</h3>
-	<div id="accountid" style="padding:5px;">
+<form action="viewAccountDetails.jsp" style="padding:5px">
+	<h3>Enter the account id to be viewed:</h3>
+	<div id="viewid" style="padding:5px;">
     <label for="accountid"><b>Account Id:</b></label>
-    <input type="text" placeholder="Enter Account Id" name="accountid" required>
+    <input type="text" placeholder="Enter Account Id" name="viewid" required>
 	
 	<div style="padding:10px">
-    <button type="submit" id="deletebtn">Delete</button>
+    <button type="submit" id="viewbtn">View</button>
 	<button type="button" id="cancelbtn">Cancel</button>
 	</div>
 	
@@ -156,3 +156,4 @@ form.example::after {
 
 
 </html>
+</DOCTYPE>

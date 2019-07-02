@@ -4,22 +4,29 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.Scanner;
 
 public class Customer_Service {
 	
-	static int id=1;
+	
 	public int insertCustomer(String fname,String lname,String gender,String dob,String address,String mobileno,String emailid,String password)
 	{
 		int a=0;
 		try{
+			int count=0;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			// DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver ());
 			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","hr","1234");
 			PreparedStatement ps=con.prepareStatement("insert into customer_master values(?,?,?,?,?,?,?,?,?)");
-		
-			ps.setString(1,Integer.toString(id));
-			id++;
+			Statement pst = con.createStatement();
+			ResultSet rs = pst.executeQuery("Select * from customer_master");
+			while(rs.next())
+			{
+				count++;
+			}
+			ps.setString(1,Integer.toString(count+1));
 			ps.setString(2, fname);
 			ps.setString(3, lname);
 			ps.setString(4, gender);

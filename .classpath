@@ -14,5 +14,7 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="F:/Installer/eclipse/ojdbc14.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/Installer/h2.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/main data/Downloads/h2/bin/h2-1.4.199.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

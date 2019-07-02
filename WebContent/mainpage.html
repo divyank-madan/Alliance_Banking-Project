@@ -9,14 +9,14 @@
   </div>
   
    <div id="container" style="margin-top:10px;background-color:lightgrey;width:250px" >
-   <form>
+   <form action="EmployeeLoginServlet">
    <div id="email" style="PADDING:5px">
-   <label for="email">Email:</label>
-   <input type="text" id="email" name="email" placehol	der="Email">
+   <label for="email">Username:</label>
+   <input type="text" id="email" name="username" placeholder="Enter Name">
    </div>
    <div id="pass" style="PADDING:5px">
    <label for="password">Password:</label>
-   <input type="password" id="password" name="password" placeholder="Password">
+   <input type="password" id="password" name="password" placeholder="Enter Password">
    </div>
    <div id="lower" style="PADDING:5px">
    <input type="checkbox"><label for="checkbox">Keep me logged in</label>
@@ -27,58 +27,6 @@
    </div>
    </form>
    </div>
-  	<div id="container" style="height:470px;width:400px;background-color:lightgrey">
-	<form action="RegisterServlet" method="post">    
-    <center><h1>Registeration Form</h1></center>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-	<div id="fname" style="padding:5px;">
-    <label for="fname"><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="fname" required>
-	</div>	
-	<div id="lname" style="padding:5px;">
-    <label for="lname"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="lname" required>
-	</div>
-	<div id="dob" style="padding:5px;">
-    <label for="dob"><b>Date Of Birth</b></label>
-    <input type="text" placeholder="Enter DOB" name="dob" required>
-	</div>
-	<div id="address" style="padding:5px;">
-    <label for="address"><b>Address</b></label>
-    <input type="text" placeholder="Enter Address" name="address" required>
-	</div>
-	<div id="mobile no" style="padding:5px;">
-    <label for="mobile no"><b>Mobile No.</b></label>
-    <input type="text" placeholder="Enter mobile no" name="mobile no" required>
-	</div>
-	<div id="gender" style="padding:5px;">
-    <label for="gender"><b>Gender</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="radio" name="gender" value="M">Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="radio" name="gender" value="F">Female
-	</div>
-	<div id="email" style="padding:5px;">
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-	</div>
-	<div id="pass" style="padding:5px;">
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-	</div>
-	<div id="confirmpass" style="padding:5px;">
-    <label for="confirm_pass"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Confirm Password" name="confirm_pass" required>
-    </div>
-	<hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-	<center>
-    <button type="submit" id="savebtn">Save</button>
-	<button type="button" id="cancelbtn">Cancel</button>
-	</center>
-	</form>
-	</div>
-  
-   
 
 </body>
 
